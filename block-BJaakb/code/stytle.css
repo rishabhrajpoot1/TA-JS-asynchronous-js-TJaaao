@@ -1,0 +1,232 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Styles  */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  font-size: 1.125rem;
+  background-color: rgb(192, 223, 250);
+}
+
+header {
+  background-color: #000;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+main {
+  padding: 0 2rem;
+}
+
+.input-box {
+  text-align: center;
+}
+
+input {
+  width: 400px;
+  height: 2.5rem;
+  padding-left: 0.6rem;
+  margin: 1rem auto;
+  border: 1px solid black;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+}
+
+.imageContainer {
+  max-width: 1400px;
+  width: 100%;
+  height: 82vh;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.imageContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.image-box {
+  flex: 0 1 24%;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.image-box:hover .download {
+  display: flex;
+}
+
+.download {
+    display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 2rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  text-decoration: none;
+  color:black;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
